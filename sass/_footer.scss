@@ -1,0 +1,51 @@
+@import './variables';
+
+
+.footer {
+	background-color: $secundario;
+	padding-top: 2rem 0;
+
+	&__grid {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	&__widget {
+		margin-bottom: 5rem;
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+	}
+
+	&__heading {
+		color: $blanco;
+		margin: 0;
+	}
+
+	&__nav {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__nav,
+	&__texto {
+		margin-top: 1rem;
+	}
+
+	&__link,
+	&__texto {
+		font-size: 1.5rem;
+		line-height: 1.8;
+		color: $blanco;
+		width: 370px;
+        text-decoration: none;
+	}
+
+	&__copyright {
+		background-color: $primario;
+		margin: 0;
+		color: $blanco;
+		text-align: center;
+		padding: 1rem;
+	}
+}

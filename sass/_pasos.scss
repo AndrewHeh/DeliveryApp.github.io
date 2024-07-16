@@ -1,0 +1,42 @@
+@import './variables';
+
+.pasos {
+    margin-top: 5rem;
+
+    &__contenido {
+        background-color: $primario;
+        padding-top: 50px;
+        padding-bottom: 50px; 
+    }
+
+    &__heading {
+        text-align: center;
+        color: $blanco;
+        margin-bottom: 2rem;
+
+        &--descripcion {
+            font-size: 1.8rem;
+            display: block;
+        }
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        padding: 0 2rem;
+    }
+
+    &__paso {
+        background: #fff; 
+        padding: 2rem;
+        border-radius: 1rem;
+
+        text-align: center;
+    }
+
+    &__imagen {
+        max-width: 100%;
+        height: auto;
+    }
+}
